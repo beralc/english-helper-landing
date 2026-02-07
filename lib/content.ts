@@ -43,7 +43,7 @@ export interface Content {
 export const content: Record<Lang, Content> = {
   en: {
     hero: {
-      headline: 'Practice English Conversation Anytime—Without Pressure',
+      headline: 'Practice English Conversation Anytime, Without Pressure',
       subheading: 'An AI-powered English conversation tutor designed for learners aged 55+, offering naturally adaptive dialogues wherever you are, whenever you\'re ready.',
       cta: 'Request Your Invitation',
     },
@@ -52,7 +52,7 @@ export const content: Record<Lang, Content> = {
       steps: [
         {
           title: 'Simply Start Talking',
-          description: 'No buttons to press—just speak naturally',
+          description: 'No buttons to press, just speak naturally',
         },
         {
           title: 'Get Personalized Support',

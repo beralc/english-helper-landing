@@ -31,13 +31,7 @@ export default function Hero({ content, lang }: HeroProps) {
             id="hero-heading"
             className="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight mb-6 drop-shadow-lg"
           >
-            {lang === 'es' ? (
-              <>
-                Practica conversaciones en Inglés cuando quieras y — <span className="text-emerald-300">a tu ritmo, sin presión</span>
-              </>
-            ) : (
-              content.headline
-            )}
+  {content.headline}
           </h1>
 
           {/* Subheading */}
