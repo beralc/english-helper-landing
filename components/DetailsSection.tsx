@@ -137,14 +137,6 @@ export default function DetailsSection({ whyThisWorks, whoWeAreLookingFor, lang 
                 ))}
               </ul>
 
-              <div className="mt-8 pt-6 border-t border-gray-700">
-                <p className="text-sm text-gray-400 italic">
-                  {lang === 'es'
-                    ? '"Aprendiendo inglés: Cualquier nivel bienvenido, desde principiante hasta avanzado."'
-                    : '"Learning English: Any level welcome, from beginner to advanced."'
-                  }
-                </p>
-              </div>
             </div>
           </div>
         </div>

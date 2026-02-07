@@ -3,11 +3,12 @@ import { Inter } from 'next/font/google';
 import '../globals.css';
 import { Lang } from '@/lib/content';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import CookieConsent from '@/components/CookieConsent';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Bernardo\'s Teaching Assistant - English Conversation Practice for Seniors',
+  title: 'Bernardo\'s English Helper - English Conversation Practice for Seniors',
   description: 'AI-powered English conversation tutor for learners aged 55+. Practice naturally adaptive dialogues at your own pace.',
   icons: {
     icon: [
@@ -39,6 +40,7 @@ export default async function RootLayout({
       <body className={inter.className}>
         <LanguageSwitcher currentLang={lang} />
         <main>{children}</main>
+        <CookieConsent lang={lang} />
       </body>
     </html>
   );

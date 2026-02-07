@@ -14,19 +14,22 @@ export default function LanguageSwitcher({ currentLang }: LanguageSwitcherProps)
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md" aria-label="Language navigation">
       <div className="container-custom">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center">
+          <Link href={`/${currentLang}`} className="flex items-center gap-3">
             <Image
-              src="/logo-nav.png"
-              alt="Bernardo's Teaching Assistant"
-              width={200}
-              height={75}
+              src="/logo.svg"
+              alt="Bernardo's English Helper"
+              width={44}
+              height={44}
               priority
-              className="h-16 w-auto"
+              className="rounded-xl"
             />
-          </div>
+            <span className="text-xl font-bold text-gray-900">
+              Bernardo&apos;s English Helper
+            </span>
+          </Link>
           <Link
             href={`/${targetLang}`}
-            className="text-gray-500 hover:text-emerald-300 transition-colors font-medium"
+            className="text-gray-500 hover:text-emerald-500 transition-colors font-medium"
             aria-label={`Switch to ${targetLang === 'en' ? 'English' : 'Spanish'}`}
           >
             {content.nav.languageSwitch}

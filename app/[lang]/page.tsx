@@ -1,4 +1,5 @@
 import { Lang, getContent } from '@/lib/content';
+import Link from 'next/link';
 import Hero from '@/components/Hero';
 import HowItWorks from '@/components/HowItWorks';
 import DetailsSection from '@/components/DetailsSection';
@@ -23,9 +24,18 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         <InvitationForm content={content.form} lang={lang} />
       </main>
 
-      <footer className="bg-gray-800 text-white py-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
-          &copy; 2025 Bernardo&apos;s Teaching Assistant. All rights reserved.
+      <footer className="bg-gray-800 text-white py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div className="text-sm text-gray-400">
+              &copy; 2026 Bernardo&apos;s English Helper. {lang === 'es' ? 'Todos los derechos reservados.' : 'All rights reserved.'}
+            </div>
+            <div className="flex gap-6 text-sm">
+              <Link href={`/${lang}/privacy`} className="text-gray-400 hover:text-white transition-colors">
+                {lang === 'es' ? 'Política de Privacidad' : 'Privacy Policy'}
+              </Link>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
