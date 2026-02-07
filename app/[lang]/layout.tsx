@@ -4,6 +4,7 @@ import '../globals.css';
 import { Lang } from '@/lib/content';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import CookieConsent from '@/components/CookieConsent';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -38,6 +39,7 @@ export default async function RootLayout({
   return (
     <html lang={lang}>
       <body className={inter.className}>
+        <GoogleAnalytics />
         <LanguageSwitcher currentLang={lang} />
         <main>{children}</main>
         <CookieConsent lang={lang} />
