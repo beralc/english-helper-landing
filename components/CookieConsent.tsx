@@ -22,16 +22,16 @@ const content = {
     saveSettings: 'Save Settings',
   },
   es: {
-    message: 'Utilizamos cookies para mejorar tu experiencia de navegación. Al continuar usando nuestro sitio, aceptas el uso de cookies de acuerdo con nuestra',
+    message: 'Usamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas su uso según nuestra',
     privacyPolicy: 'Política de Privacidad',
     accept: 'Aceptar',
     reject: 'Rechazar',
-    settings: 'Configurar Cookies',
+    settings: 'Configurar',
     necessary: 'Cookies necesarias',
-    necessaryDesc: 'Necesarias para el funcionamiento del sitio web.',
+    necessaryDesc: 'Imprescindibles para que la web funcione correctamente.',
     analytics: 'Cookies de análisis',
-    analyticsDesc: 'Nos ayudan a entender cómo los visitantes interactúan con nuestro sitio.',
-    saveSettings: 'Guardar Configuración',
+    analyticsDesc: 'Nos ayudan a entender cómo usas la web.',
+    saveSettings: 'Guardar',
   },
 };
 

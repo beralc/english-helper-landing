@@ -18,7 +18,7 @@ export default function DetailsSection({ whyThisWorks, whoWeAreLookingFor, lang 
               <h2 className="text-3xl font-extrabold text-gray-900">{whyThisWorks.title}</h2>
               <p className="text-gray-500 mt-2">
                 {lang === 'es'
-                  ? 'Diseñado para eliminar el estrés y construir confianza a tu propio ritmo'
+                  ? 'Diseñado para aprender sin estrés y ganar confianza a tu ritmo'
                   : 'Designed to eliminate stress and build confidence.'
                 }
               </p>
@@ -39,7 +39,7 @@ export default function DetailsSection({ whyThisWorks, whoWeAreLookingFor, lang 
               </h3>
               <p className="text-gray-600 relative z-10">
                 {lang === 'es'
-                  ? 'Aprende sin juicios. La IA espera a que termines tu idea, sin importar cuánto tiempo necesites.'
+                  ? 'Aprende a tu ritmo. La IA espera a que termines tu idea, sin importar cuánto tardes.'
                   : 'Relax and learn without judgment. The AI waits for you to finish your thought, no matter how long it takes.'
                 }
               </p>
@@ -56,7 +56,7 @@ export default function DetailsSection({ whyThisWorks, whoWeAreLookingFor, lang 
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{whyThisWorks.benefits[1]}</h3>
                 <p className="text-gray-600 text-sm">
                   {lang === 'es'
-                    ? 'Escucha cada palabra claramente. También podrás leer la transcripción.'
+                    ? 'Elige el acento que prefieras y escucha cada palabra con claridad. También puedes leer la transcripción.'
                     : 'Hear every word clearly. Adjust the speed to your liking.'
                   }
                 </p>
@@ -70,7 +70,7 @@ export default function DetailsSection({ whyThisWorks, whoWeAreLookingFor, lang 
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{whyThisWorks.benefits[3]}</h3>
                 <p className="text-gray-600 text-sm">
                   {lang === 'es'
-                    ? 'Continúa justo donde lo dejaste. Recuerda todo tu progreso.'
+                    ? 'Continúa donde lo dejaste. La IA recuerda todo tu progreso.'
                     : 'Pick up exactly where you left off. It remembers your progress.'
                   }
                 </p>
@@ -83,7 +83,7 @@ export default function DetailsSection({ whyThisWorks, whoWeAreLookingFor, lang 
                 <h3 className="text-lg font-bold text-gray-900">{whyThisWorks.benefits[2]}</h3>
                 <p className="text-gray-600 text-sm">
                   {lang === 'es'
-                    ? 'Practica por la mañana con el café, o antes de dormir.'
+                    ? 'Practica con el café de la mañana o antes de dormir.'
                     : 'Practice in the morning with coffee, or before bed.'
                   }
                 </p>
