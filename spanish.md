@@ -72,7 +72,7 @@ Diseñado para aprender sin estrés y ganar confianza a tu ritmo
 1. Acceso gratuito a la aplicación
 2. Sesión de bienvenida y formación inicial
 3. Apoyo continuo durante todo el estudio
-4. Participación en una investigación doctoral sobre el aprendizaje de idiomas en adultos
+4. Participación en una investigación de doctorado sobre el aprendizaje de idiomas en adultos
 
 ---
 

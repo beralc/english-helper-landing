@@ -155,7 +155,7 @@ export const content: Record<Lang, Content> = {
         'Acceso gratuito a la aplicación',
         'Sesión de bienvenida y formación inicial',
         'Apoyo continuo durante todo el estudio',
-        'Participación en una investigación doctoral sobre el aprendizaje de idiomas en adultos',
+        'Participación en una investigación de doctorado sobre el aprendizaje de idiomas en adultos',
       ],
     },
     form: {
