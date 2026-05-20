@@ -45,3 +45,54 @@ Si conoces a alguien que pueda encajar, te agradecería que se lo pasaras.
 https://invitation-englishhelper.bernardomorales.com
 
 #TesisDoctoral #UCM #InglésParaAdultos
+
+---
+---
+
+# English Posts
+
+---
+
+## Post 1 — Why I built it
+
+I've spent years teaching English to adults. The thing that always strikes me is that the level of English is rarely the real problem. The fear of speaking in front of someone is.
+
+For my PhD at UCM I built an app where you practice English conversation with an AI voice, with no one judging you. You can take as long as you need to answer. You can get things wrong. It doesn't matter.
+
+It's not a commercial product — it's a research study approved by the university ethics committee. I need participants for the data to mean something.
+
+If you're over 50 and based in or near Madrid, you can find out more here:
+
+https://invitation-englishhelper.bernardomorales.com
+
+Free to join, with personal support throughout.
+
+#LanguageLearning #EdTech #UCM
+
+---
+
+## Post 2 — "That's not for me"
+
+When I tell people I built an English conversation app for adults over 50, the most common reaction is: "I'm not really a tech person, that's not for me."
+
+The app only needs your voice. You speak, it listens, it responds. Nothing to type, nothing to install. And before you start, there's a session with me to go through everything and answer any questions.
+
+I'm looking for people over 50 who want to practice their spoken English, in Madrid or nearby. Level doesn't matter.
+
+https://invitation-englishhelper.bernardomorales.com
+
+#SeniorLearners #EnglishPractice
+
+---
+
+## Post 3 — Spots are limited *(use when study is about to start)*
+
+Spots for my doctoral study are limited — not as a tactic, but because the research needs a specific group size for the results to be valid.
+
+I'm looking for adults 50 and over, based in or near Madrid, who can commit to using the app for a few weeks. Free access, a personal onboarding session, and support throughout.
+
+If you know someone who might be interested, I'd really appreciate you passing this on.
+
+https://invitation-englishhelper.bernardomorales.com
+
+#PhDResearch #UCM #LanguageLearning
