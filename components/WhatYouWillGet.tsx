@@ -10,13 +10,13 @@ const benefitDescriptions: Record<Lang, string[]> = {
     'The app is completely free for all study participants. No subscriptions or hidden costs.',
     'A researcher will guide you through the app in a one-to-one session before you start.',
     'You can reach out to us by phone or email at any point during the study.',
-    'Your participation helps advance knowledge about language learning for older adults at Universidad Complutense de Madrid.',
+    'Your experience may help others like you learn English in the future. Real research, real impact.',
   ],
   es: [
     'La aplicación es completamente gratuita para todos los participantes del estudio. Sin suscripciones ni costes ocultos.',
     'Un investigador te guiará por la aplicación en una sesión individual antes de comenzar.',
     'Puedes contactarnos por teléfono o correo electrónico en cualquier momento durante el estudio.',
-    'Tu participación contribuye al avance del conocimiento sobre el aprendizaje de idiomas en adultos mayores en la Universidad Complutense de Madrid.',
+    'Tu experiencia puede ayudar a otras personas como tú a aprender inglés. Investigación real, impacto real.',
   ],
 };
 

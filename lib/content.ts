@@ -91,7 +91,7 @@ export const content: Record<Lang, Content> = {
         'Free access to the app',
         'Personal onboarding session',
         'Ongoing support throughout the study',
-        'The satisfaction of contributing to real university research — and knowing your experience may help others like you learn English in the future',
+        'You contribute to real research at UCM',
       ],
     },
     form: {
@@ -158,7 +158,7 @@ export const content: Record<Lang, Content> = {
         'Acceso gratuito a la aplicación',
         'Sesión de bienvenida y formación inicial',
         'Apoyo continuo durante todo el estudio',
-        'La satisfacción de formar parte de una investigación real de la Universidad Complutense de Madrid — y de saber que tu experiencia puede ayudar a otras personas como tú a aprender inglés en el futuro',
+        'Formas parte de una investigación real de la UCM',
       ],
     },
     form: {
