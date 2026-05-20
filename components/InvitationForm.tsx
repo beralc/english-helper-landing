@@ -36,15 +36,17 @@ export default function InvitationForm({ content, lang }: InvitationFormProps) {
     };
 
     try {
-      // TODO: Replace with actual form submission endpoint when available
-      // For now, we'll simulate a successful submission
-      console.log('Form data:', data);
+      const response = await fetch('https://formspree.io/f/xaqkewqa', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data),
+      });
 
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      if (!response.ok) throw new Error('Submission failed');
 
       setIsSuccess(true);
       (e.target as HTMLFormElement).reset();
+      setConsentChecked(false);
     } catch (err) {
       setError(lang === 'es' ? 'Ha ocurrido un error. Por favor, inténtalo de nuevo.' : 'Something went wrong. Please try again.');
       console.error('Form submission error:', err);

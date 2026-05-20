@@ -4,7 +4,7 @@ import Link from 'next/link';
 const privacyContent = {
   en: {
     title: 'Privacy Policy',
-    lastUpdated: 'Last updated: February 2026',
+    lastUpdated: 'Last updated: May 2026',
     backToHome: '← Back to Home',
     sections: [
       {
@@ -101,7 +101,7 @@ www.aepd.es`
   },
   es: {
     title: 'Política de Privacidad',
-    lastUpdated: 'Última actualización: Febrero 2026',
+    lastUpdated: 'Última actualización: Mayo 2026',
     backToHome: '← Volver al Inicio',
     sections: [
       {
