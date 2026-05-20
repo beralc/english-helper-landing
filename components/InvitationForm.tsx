@@ -138,12 +138,12 @@ export default function InvitationForm({ content, lang }: InvitationFormProps) {
                   type="number"
                   id="age"
                   name="age"
-                  min="50"
+                  min="1"
                   max="120"
                   required
                   className="block w-full px-4 py-3 text-base bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition outline-none"
                   aria-required="true"
-                  placeholder="50+"
+                  placeholder=""
                 />
               </div>
 
