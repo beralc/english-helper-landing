@@ -32,10 +32,11 @@ export default function InvitationForm({ content, lang }: InvitationFormProps) {
       email: formData.get('email'),
       age: formData.get('age'),
       location: formData.get('location'),
+      language: lang,
     };
 
     try {
-      const response = await fetch('https://formspree.io/f/xaqkewqa', {
+      const response = await fetch('https://bernardo-s-teaching-assistant.onrender.com/formspree_webhook', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(data),
