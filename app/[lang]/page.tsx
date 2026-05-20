@@ -30,13 +30,22 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
             <div className="text-base text-gray-300">
               &copy; 2026 Bernardo&apos;s English Helper. {lang === 'es' ? 'Todos los derechos reservados.' : 'All rights reserved.'}
             </div>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2 items-center">
               <Link
                 href={`/${lang}/privacy`}
                 className="inline-flex items-center min-h-[44px] px-3 text-base text-gray-300 hover:text-white underline transition-colors"
               >
                 {lang === 'es' ? 'Política de Privacidad' : 'Privacy Policy'}
               </Link>
+              <span className="text-gray-600">·</span>
+              <a
+                href="https://www.dadadadesign.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center min-h-[44px] px-3 text-base text-gray-400 hover:text-white transition-colors"
+              >
+                {lang === 'es' ? 'Sitio web por Dadada Design' : 'Site by Dadada Design'}
+              </a>
             </div>
           </div>
         </div>
