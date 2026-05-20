@@ -114,7 +114,7 @@ export const content: Record<Lang, Content> = {
   es: {
     hero: {
       headline: 'Practica inglés cuando quieras, a tu ritmo y sin presión',
-      subheading: 'Un tutor de conversación en inglés con inteligencia artificial diseñado para mayores de 50 años. Diálogos naturales donde estés, cuando quieras.',
+      subheading: 'Un tutor amable de conversación en inglés, diseñado para personas de 50 años o más. Practica a tu ritmo, desde tu móvil u ordenador, cuando tú quieras.',
       cta: 'Solicita tu invitación',
     },
     howItWorks: {
