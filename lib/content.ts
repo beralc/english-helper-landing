@@ -29,7 +29,6 @@ export interface Content {
     title: string;
     nameLabel: string;
     emailLabel: string;
-    phoneLabel: string;
     ageLabel: string;
     locationLabel: string;
     submitButton: string;
@@ -99,7 +98,6 @@ export const content: Record<Lang, Content> = {
       title: 'Request Your Invitation',
       nameLabel: 'Full Name',
       emailLabel: 'Email Address',
-      phoneLabel: 'Phone Number',
       ageLabel: 'Age',
       locationLabel: 'Location',
       submitButton: 'Request Invitation',
@@ -167,7 +165,6 @@ export const content: Record<Lang, Content> = {
       title: 'Solicita tu invitación',
       nameLabel: 'Nombre completo',
       emailLabel: 'Correo electrónico',
-      phoneLabel: 'Teléfono',
       ageLabel: 'Edad',
       locationLabel: 'Ciudad',
       submitButton: 'Solicitar invitación',

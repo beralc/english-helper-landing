@@ -30,7 +30,6 @@ export default function InvitationForm({ content, lang }: InvitationFormProps) {
     const data = {
       name: formData.get('name'),
       email: formData.get('email'),
-      phone: formData.get('phone'),
       age: formData.get('age'),
       location: formData.get('location'),
     };
@@ -120,23 +119,6 @@ export default function InvitationForm({ content, lang }: InvitationFormProps) {
                 type="email"
                 id="email"
                 name="email"
-                required
-                className="block w-full px-4 py-3 text-base bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition outline-none"
-                aria-required="true"
-              />
-            </div>
-
-            <div>
-              <label
-                htmlFor="phone"
-                className="block text-base font-semibold text-gray-700 mb-1"
-              >
-                {content.phoneLabel}
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
                 required
                 className="block w-full px-4 py-3 text-base bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition outline-none"
                 aria-required="true"
