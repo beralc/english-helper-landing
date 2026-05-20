@@ -27,6 +27,9 @@ const config: Config = {
         },
       },
       fontSize: {
+        // Override text-sm to 16px so no senior-facing text falls below readable size.
+        // Tailwind's default text-sm is 14px — too small for users aged 50+.
+        'sm': ['16px', '1.6'],
         'base': ['16px', '1.6'],
         'lg': ['18px', '1.6'],
         'xl': ['20px', '1.5'],

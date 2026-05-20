@@ -20,18 +20,21 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
           whoWeAreLookingFor={content.whoWeAreLookingFor}
           lang={lang}
         />
-        <WhatYouWillGet content={content.whatYouWillGet} />
+        <WhatYouWillGet content={content.whatYouWillGet} lang={lang} />
         <InvitationForm content={content.form} lang={lang} />
       </main>
 
       <footer className="bg-gray-800 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <div className="text-sm text-gray-400">
+            <div className="text-base text-gray-300">
               &copy; 2026 Bernardo&apos;s English Helper. {lang === 'es' ? 'Todos los derechos reservados.' : 'All rights reserved.'}
             </div>
-            <div className="flex gap-6 text-sm">
-              <Link href={`/${lang}/privacy`} className="text-gray-400 hover:text-white transition-colors">
+            <div className="flex gap-2">
+              <Link
+                href={`/${lang}/privacy`}
+                className="inline-flex items-center min-h-[44px] px-3 text-base text-gray-300 hover:text-white underline transition-colors"
+              >
                 {lang === 'es' ? 'Política de Privacidad' : 'Privacy Policy'}
               </Link>
             </div>

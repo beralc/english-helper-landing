@@ -54,7 +54,7 @@ export default function DetailsSection({ whyThisWorks, whoWeAreLookingFor, lang 
                   </svg>
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{whyThisWorks.benefits[1]}</h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-base text-gray-600">
                   {lang === 'es'
                     ? 'Elige el acento que prefieras y escucha cada palabra con claridad. También puedes leer la transcripción.'
                     : 'Hear every word clearly. Adjust the speed to your liking.'
@@ -68,7 +68,7 @@ export default function DetailsSection({ whyThisWorks, whoWeAreLookingFor, lang 
                   </svg>
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{whyThisWorks.benefits[3]}</h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-base text-gray-600">
                   {lang === 'es'
                     ? 'Continúa donde lo dejaste. La IA recuerda todo tu progreso.'
                     : 'Pick up exactly where you left off. It remembers your progress.'
@@ -81,7 +81,7 @@ export default function DetailsSection({ whyThisWorks, whoWeAreLookingFor, lang 
             <div className="bento-card bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-emerald-200">
               <div>
                 <h3 className="text-lg font-bold text-gray-900">{whyThisWorks.benefits[2]}</h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-base text-gray-600">
                   {lang === 'es'
                     ? 'Practica con el café de la mañana o antes de dormir.'
                     : 'Practice in the morning with coffee, or before bed.'

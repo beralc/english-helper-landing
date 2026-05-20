@@ -20,6 +20,9 @@ const content = {
     analytics: 'Analytics cookies',
     analyticsDesc: 'Help us understand how visitors interact with our website.',
     saveSettings: 'Save Settings',
+    toggleOn: 'On',
+    toggleOff: 'Off',
+    back: 'Back',
   },
   es: {
     message: 'Usamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas su uso según nuestra',
@@ -32,6 +35,9 @@ const content = {
     analytics: 'Cookies de análisis',
     analyticsDesc: 'Nos ayudan a entender cómo usas la web.',
     saveSettings: 'Guardar',
+    toggleOn: 'Sí',
+    toggleOff: 'No',
+    back: 'Volver',
   },
 };
 
@@ -68,33 +74,38 @@ export default function CookieConsent({ lang }: CookieConsentProps) {
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 shadow-lg p-4 sm:p-6">
+    <div
+      className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t-2 border-gray-200 shadow-lg p-4 sm:p-6"
+      role="dialog"
+      aria-modal="true"
+      aria-label={lang === 'es' ? 'Aviso de cookies' : 'Cookie notice'}
+    >
       <div className="max-w-7xl mx-auto">
         {!showSettings ? (
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <p className="text-sm text-gray-600 flex-1">
+            <p className="text-base text-gray-700 flex-1">
               {t.message}{' '}
-              <Link href={`/${lang}/privacy`} className="text-emerald-600 hover:underline">
+              <Link href={`/${lang}/privacy`} className="text-emerald-700 underline hover:text-emerald-900">
                 {t.privacyPolicy}
               </Link>
               .
             </p>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-3">
               <button
                 onClick={() => setShowSettings(true)}
-                className="px-4 py-2 text-sm text-gray-600 hover:text-gray-900 border border-gray-300 rounded-lg transition-colors"
+                className="min-h-[44px] px-5 py-2 text-base text-gray-700 hover:text-gray-900 font-medium border border-gray-300 rounded-lg transition-colors hover:bg-gray-50 focus-visible:ring-2 focus-visible:ring-emerald-500"
               >
                 {t.settings}
               </button>
               <button
                 onClick={handleReject}
-                className="px-4 py-2 text-sm text-gray-600 hover:text-gray-900 border border-gray-300 rounded-lg transition-colors"
+                className="min-h-[44px] px-5 py-2 text-base text-gray-700 hover:text-gray-900 font-medium border border-gray-300 rounded-lg transition-colors hover:bg-gray-50 focus-visible:ring-2 focus-visible:ring-emerald-500"
               >
                 {t.reject}
               </button>
               <button
                 onClick={handleAccept}
-                className="px-4 py-2 text-sm text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg transition-colors"
+                className="min-h-[44px] px-5 py-2 text-base text-white font-bold bg-emerald-600 hover:bg-emerald-700 rounded-lg transition-colors shadow-sm focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
               >
                 {t.accept}
               </button>
@@ -104,37 +115,44 @@ export default function CookieConsent({ lang }: CookieConsentProps) {
           <div className="space-y-4">
             <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
               <div>
-                <h3 className="font-medium text-gray-900">{t.necessary}</h3>
-                <p className="text-sm text-gray-500">{t.necessaryDesc}</p>
+                <h3 className="text-base font-semibold text-gray-900">{t.necessary}</h3>
+                <p className="text-base text-gray-600 mt-1">{t.necessaryDesc}</p>
               </div>
-              <div className="w-12 h-6 bg-emerald-500 rounded-full flex items-center justify-end px-1">
-                <div className="w-4 h-4 bg-white rounded-full"></div>
+              <div
+                className="w-14 h-8 bg-emerald-500 rounded-full flex items-center justify-end px-1 ml-4 flex-shrink-0"
+                aria-hidden="true"
+              >
+                <div className="w-6 h-6 bg-white rounded-full shadow-sm"></div>
               </div>
             </div>
             <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
               <div>
-                <h3 className="font-medium text-gray-900">{t.analytics}</h3>
-                <p className="text-sm text-gray-500">{t.analyticsDesc}</p>
+                <h3 className="text-base font-semibold text-gray-900">{t.analytics}</h3>
+                <p className="text-base text-gray-600 mt-1">{t.analyticsDesc}</p>
               </div>
               <button
                 onClick={() => setAnalyticsConsent(!analyticsConsent)}
-                className={`w-12 h-6 rounded-full flex items-center px-1 transition-colors ${
+                className={`relative min-w-[56px] h-8 rounded-full flex items-center px-1 ml-4 flex-shrink-0 transition-colors focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 ${
                   analyticsConsent ? 'bg-emerald-500 justify-end' : 'bg-gray-300 justify-start'
                 }`}
+                role="switch"
+                aria-checked={analyticsConsent}
+                aria-label={t.analytics}
               >
-                <div className="w-4 h-4 bg-white rounded-full"></div>
+                <div className="w-6 h-6 bg-white rounded-full shadow-sm"></div>
+                <span className="sr-only">{analyticsConsent ? t.toggleOn : t.toggleOff}</span>
               </button>
             </div>
-            <div className="flex justify-end gap-2">
+            <div className="flex justify-end gap-3">
               <button
                 onClick={() => setShowSettings(false)}
-                className="px-4 py-2 text-sm text-gray-600 hover:text-gray-900 border border-gray-300 rounded-lg transition-colors"
+                className="min-h-[44px] px-5 py-2 text-base text-gray-700 hover:text-gray-900 font-medium border border-gray-300 rounded-lg transition-colors hover:bg-gray-50 focus-visible:ring-2 focus-visible:ring-emerald-500"
               >
-                {lang === 'es' ? 'Volver' : 'Back'}
+                {t.back}
               </button>
               <button
                 onClick={handleSaveSettings}
-                className="px-4 py-2 text-sm text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg transition-colors"
+                className="min-h-[44px] px-5 py-2 text-base text-white font-bold bg-emerald-600 hover:bg-emerald-700 rounded-lg transition-colors shadow-sm focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
               >
                 {t.saveSettings}
               </button>

@@ -46,7 +46,7 @@ export default function InvitationForm({ content, lang }: InvitationFormProps) {
       setIsSuccess(true);
       (e.target as HTMLFormElement).reset();
     } catch (err) {
-      setError('Something went wrong. Please try again.');
+      setError(lang === 'es' ? 'Ha ocurrido un error. Por favor, inténtalo de nuevo.' : 'Something went wrong. Please try again.');
       console.error('Form submission error:', err);
     } finally {
       setIsSubmitting(false);
@@ -93,7 +93,7 @@ export default function InvitationForm({ content, lang }: InvitationFormProps) {
             <div>
               <label
                 htmlFor="name"
-                className="block text-sm font-semibold text-gray-700 mb-1"
+                className="block text-base font-semibold text-gray-700 mb-1"
               >
                 {content.nameLabel}
               </label>
@@ -102,7 +102,7 @@ export default function InvitationForm({ content, lang }: InvitationFormProps) {
                 id="name"
                 name="name"
                 required
-                className="block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition outline-none"
+                className="block w-full px-4 py-3 text-base bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition outline-none"
                 aria-required="true"
               />
             </div>
@@ -110,7 +110,7 @@ export default function InvitationForm({ content, lang }: InvitationFormProps) {
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-semibold text-gray-700 mb-1"
+                className="block text-base font-semibold text-gray-700 mb-1"
               >
                 {content.emailLabel}
               </label>
@@ -119,7 +119,7 @@ export default function InvitationForm({ content, lang }: InvitationFormProps) {
                 id="email"
                 name="email"
                 required
-                className="block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition outline-none"
+                className="block w-full px-4 py-3 text-base bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition outline-none"
                 aria-required="true"
               />
             </div>
@@ -127,7 +127,7 @@ export default function InvitationForm({ content, lang }: InvitationFormProps) {
             <div>
               <label
                 htmlFor="phone"
-                className="block text-sm font-semibold text-gray-700 mb-1"
+                className="block text-base font-semibold text-gray-700 mb-1"
               >
                 {content.phoneLabel}
               </label>
@@ -136,16 +136,16 @@ export default function InvitationForm({ content, lang }: InvitationFormProps) {
                 id="phone"
                 name="phone"
                 required
-                className="block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition outline-none"
+                className="block w-full px-4 py-3 text-base bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition outline-none"
                 aria-required="true"
               />
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              <div>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex-1">
                 <label
                   htmlFor="age"
-                  className="block text-sm font-semibold text-gray-700 mb-1"
+                  className="block text-base font-semibold text-gray-700 mb-1"
                 >
                   {content.ageLabel}
                 </label>
@@ -153,18 +153,19 @@ export default function InvitationForm({ content, lang }: InvitationFormProps) {
                   type="number"
                   id="age"
                   name="age"
-                  min="55"
+                  min="50"
+                  max="120"
                   required
-                  className="block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition outline-none"
+                  className="block w-full px-4 py-3 text-base bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition outline-none"
                   aria-required="true"
-                  placeholder="55+"
+                  placeholder="50+"
                 />
               </div>
 
-              <div>
+              <div className="flex-1">
                 <label
                   htmlFor="location"
-                  className="block text-sm font-semibold text-gray-700 mb-1"
+                  className="block text-base font-semibold text-gray-700 mb-1"
                 >
                   {content.locationLabel}
                 </label>
@@ -173,7 +174,7 @@ export default function InvitationForm({ content, lang }: InvitationFormProps) {
                   id="location"
                   name="location"
                   required
-                  className="block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition outline-none"
+                  className="block w-full px-4 py-3 text-base bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition outline-none"
                   aria-required="true"
                 />
               </div>
@@ -188,18 +189,19 @@ export default function InvitationForm({ content, lang }: InvitationFormProps) {
                     setConsentChecked(e.target.checked);
                     if (e.target.checked) setConsentError(false);
                   }}
-                  className="mt-1 w-5 h-5 rounded border-gray-300 text-emerald-600 focus:ring-emerald-500 flex-shrink-0"
+                  className="mt-1 w-6 h-6 rounded border-gray-300 text-emerald-600 focus:ring-emerald-500 flex-shrink-0"
                   aria-required="true"
+                  aria-describedby={consentError ? 'consent-error' : undefined}
                 />
-                <span className="text-sm text-gray-600 leading-relaxed">
+                <span className="text-base text-gray-700 leading-relaxed">
                   {content.consentLabel}{' '}
-                  <Link href={`/${lang}/privacy`} className="text-emerald-600 hover:underline">
+                  <Link href={`/${lang}/privacy`} className="text-emerald-700 underline hover:text-emerald-900">
                     {lang === 'es' ? 'Política de Privacidad' : 'Privacy Policy'}
                   </Link>
                 </span>
               </label>
               {consentError && (
-                <p className="mt-2 text-sm text-red-600" role="alert">
+                <p id="consent-error" className="mt-2 text-base font-semibold text-red-700" role="alert">
                   {content.consentRequired}
                 </p>
               )}
@@ -210,9 +212,10 @@ export default function InvitationForm({ content, lang }: InvitationFormProps) {
                 type="submit"
                 disabled={isSubmitting}
                 className="w-full bg-emerald-600 hover:bg-emerald-700 disabled:bg-gray-400 text-white font-bold py-4 rounded-xl text-lg uppercase tracking-wider shadow-lg hover:shadow-emerald-500/30 transition transform hover:-translate-y-0.5 focus:outline-none focus-visible:ring-4 focus-visible:ring-emerald-300 disabled:cursor-not-allowed"
-                aria-label={content.submitButton}
+                aria-label={isSubmitting ? (lang === 'es' ? 'Enviando...' : 'Sending...') : content.submitButton}
+                aria-busy={isSubmitting}
               >
-                {isSubmitting ? '...' : content.submitButton}
+                {isSubmitting ? (lang === 'es' ? 'Enviando...' : 'Sending...') : content.submitButton}
               </button>
             </div>
           </form>

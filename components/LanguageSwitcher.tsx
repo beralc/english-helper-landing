@@ -29,7 +29,7 @@ export default function LanguageSwitcher({ currentLang }: LanguageSwitcherProps)
           </Link>
           <Link
             href={`/${targetLang}`}
-            className="text-gray-500 hover:text-emerald-500 transition-colors font-medium"
+            className="inline-flex items-center min-h-[44px] px-4 py-2 text-base text-gray-600 hover:text-emerald-600 font-semibold transition-colors rounded-lg hover:bg-emerald-50 focus-visible:bg-emerald-50"
             aria-label={`Switch to ${targetLang === 'en' ? 'English' : 'Spanish'}`}
           >
             {content.nav.languageSwitch}
