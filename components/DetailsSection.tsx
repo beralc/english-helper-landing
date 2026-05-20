@@ -19,7 +19,7 @@ export default function DetailsSection({ whyThisWorks, whoWeAreLookingFor, lang 
               <p className="text-gray-500 mt-2">
                 {lang === 'es'
                   ? 'Diseñado para aprender sin estrés y ganar confianza a tu ritmo'
-                  : 'Designed to eliminate stress and build confidence.'
+                  : 'Designed so you can learn without stress and build confidence at your own pace.'
                 }
               </p>
             </div>
@@ -40,7 +40,7 @@ export default function DetailsSection({ whyThisWorks, whoWeAreLookingFor, lang 
               <p className="text-gray-600 relative z-10">
                 {lang === 'es'
                   ? 'Aprende a tu ritmo. La IA espera a que termines tu idea, sin importar cuánto tardes.'
-                  : 'Relax and learn without judgment. The AI waits for you to finish your thought, no matter how long it takes.'
+                  : 'Take as long as you need. The tutor waits patiently for you to finish your thought, without ever rushing you or making you feel self-conscious.'
                 }
               </p>
             </div>
@@ -57,7 +57,7 @@ export default function DetailsSection({ whyThisWorks, whoWeAreLookingFor, lang 
                 <p className="text-base text-gray-600">
                   {lang === 'es'
                     ? 'Elige el acento que prefieras y escucha cada palabra con claridad. También puedes leer la transcripción.'
-                    : 'Hear every word clearly. Adjust the speed to your liking.'
+                    : 'Choose the accent you prefer and hear every word clearly. You can also read along with the transcript if that helps.'
                   }
                 </p>
               </div>
@@ -71,7 +71,7 @@ export default function DetailsSection({ whyThisWorks, whoWeAreLookingFor, lang 
                 <p className="text-base text-gray-600">
                   {lang === 'es'
                     ? 'Continúa donde lo dejaste. La IA recuerda todo tu progreso.'
-                    : 'Pick up exactly where you left off. It remembers your progress.'
+                    : 'Every session builds on the last. Pick up exactly where you left off — your progress is always saved.'
                   }
                 </p>
               </div>
@@ -84,7 +84,7 @@ export default function DetailsSection({ whyThisWorks, whoWeAreLookingFor, lang 
                 <p className="text-base text-gray-600">
                   {lang === 'es'
                     ? 'Practica con el café de la mañana o antes de dormir.'
-                    : 'Practice in the morning with coffee, or before bed.'
+                    : 'Practice over your morning coffee, during a lunch break, or before bed — whenever suits you.'
                   }
                 </p>
               </div>

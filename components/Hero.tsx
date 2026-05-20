@@ -42,8 +42,8 @@ export default function Hero({ content, lang }: HeroProps) {
           {/* CTA Subtext */}
           <p className="text-lg font-semibold mb-6 text-emerald-100">
             {lang === 'es'
-              ? 'Únete a nuestro estudio de investigación y obtén acceso gratuito a tu tutor personal de inglés con IA'
-              : 'Join our research study and get free access to your personal AI English tutor'
+              ? 'Participa en nuestro estudio y accede gratis a tu tutor personal de inglés'
+              : 'Join our research study and get free access to your personal English tutor'
             }
           </p>
 

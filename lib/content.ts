@@ -46,7 +46,7 @@ export const content: Record<Lang, Content> = {
   en: {
     hero: {
       headline: 'Practice English Conversation Anytime, Without Pressure',
-      subheading: 'An AI-powered English conversation tutor designed for learners aged 50+, offering naturally adaptive dialogues wherever you are, whenever you\'re ready.',
+      subheading: 'A friendly English conversation tutor designed for adults aged 50+. Practice real conversations at your own pace, from your phone or computer, whenever you feel ready.',
       cta: 'Request Your Invitation',
     },
     howItWorks: {
@@ -54,7 +54,7 @@ export const content: Record<Lang, Content> = {
       steps: [
         {
           title: 'Simply Start Talking',
-          description: 'No buttons to press, just speak naturally',
+          description: 'Just speak — the app listens and responds naturally',
         },
         {
           title: 'Get Personalized Support',
@@ -71,7 +71,7 @@ export const content: Record<Lang, Content> = {
       benefits: [
         'No pressure to keep up',
         'Speaks at a comfortable pace',
-        'Available 24/7 on your phone',
+        'Available any time, on your phone or computer',
         'Remembers your progress',
         'Designed specifically for older adults',
       ],
@@ -92,7 +92,7 @@ export const content: Record<Lang, Content> = {
         'Free access to the app',
         'Personal onboarding session',
         'Ongoing support throughout the study',
-        'Contribution to PhD research on senior language learning at Universidad Complutense de Madrid',
+        'The satisfaction of contributing to real university research — and knowing your experience may help others like you learn English in the future',
       ],
     },
     form: {
@@ -122,7 +122,7 @@ export const content: Record<Lang, Content> = {
       steps: [
         {
           title: 'Empieza a hablar',
-          description: 'Pulsa un botón y habla de forma natural',
+          description: 'Habla con normalidad — la aplicación te escucha y responde',
         },
         {
           title: 'Recibe apoyo personalizado',
@@ -160,7 +160,7 @@ export const content: Record<Lang, Content> = {
         'Acceso gratuito a la aplicación',
         'Sesión de bienvenida y formación inicial',
         'Apoyo continuo durante todo el estudio',
-        'Participación en una investigación de doctorado sobre el aprendizaje de idiomas en adultos mayores en la Universidad Complutense de Madrid',
+        'La satisfacción de formar parte de una investigación real de la Universidad Complutense de Madrid — y de saber que tu experiencia puede ayudar a otras personas como tú a aprender inglés en el futuro',
       ],
     },
     form: {
