@@ -9,7 +9,12 @@ const privacyContent = {
     sections: [
       {
         title: '1. Data Controller',
-        content: `Bernardo's English Helper ("we", "us", or "our") is the data controller responsible for your personal data. If you have any questions about this privacy policy or our data practices, please contact us at: bernardm@ucm.es`
+        content: `Bernardo's English Helper is a research tool developed as part of a PhD study in English Linguistics at Universidad Complutense de Madrid (UCM), approved by the UCM Research Ethics Committee (ref. 663_CE_20260312_35_HUM).
+
+Principal researcher: Bernardo Morales Mateo — bernardm@ucm.es
+Thesis supervisor: Dra. Lara Moratón Gutiérrez — Departamento de Estudios Ingleses: Lingüística y Literatura, Facultad de Filología, UCM
+
+If you have any questions about this privacy policy or our data practices, please contact us at: bernardm@ucm.es`
       },
       {
         title: '2. What Data We Collect',
@@ -31,10 +36,13 @@ This data is collected when you voluntarily submit it through our contact form.`
       {
         title: '4. How We Use Your Data',
         content: `We use your personal data to:
-• Respond to your inquiries about our English learning service
-• Send you information about our beta program (if you've expressed interest)
-• Improve our website and services
-• Comply with legal obligations`
+• Contact you about your participation in this research study
+• Conduct academic research for a doctoral thesis at Universidad Complutense de Madrid
+• Publish anonymised research findings in academic journals and conferences
+• Improve the application and services used in the study
+• Comply with legal obligations
+
+Your data will never be used for commercial purposes. All published findings use anonymised data only.`
       },
       {
         title: '5. Data Sharing',
@@ -46,7 +54,7 @@ All third-party providers are bound by data processing agreements that ensure GD
       },
       {
         title: '6. Data Retention',
-        content: `We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected, typically no longer than 2 years from your last interaction with us. You may request deletion at any time.`
+        content: `We retain your personal data for a maximum of 5 years after the conclusion of the research study, as required by UCM research ethics guidelines. Data is stored on encrypted servers with access restricted to the principal researcher and thesis supervisor. You may request deletion at any time by contacting bernardm@ucm.es.`
       },
       {
         title: '7. Your Rights',
@@ -98,7 +106,12 @@ www.aepd.es`
     sections: [
       {
         title: '1. Responsable del Tratamiento',
-        content: `Bernardo's English Helper ("nosotros" o "nuestro") es el responsable del tratamiento de sus datos personales. Si tiene alguna pregunta sobre esta política de privacidad o nuestras prácticas de datos, contáctenos en: bernardm@ucm.es`
+        content: `Bernardo's English Helper es una herramienta de investigación desarrollada en el marco de un estudio de doctorado en Lingüística Inglesa en la Universidad Complutense de Madrid (UCM), aprobado por el Comité de Ética de la Investigación de la UCM (ref. 663_CE_20260312_35_HUM).
+
+Investigador principal: Bernardo Morales Mateo — bernardm@ucm.es
+Directora de tesis: Dra. Lara Moratón Gutiérrez — Departamento de Estudios Ingleses: Lingüística y Literatura, Facultad de Filología, UCM
+
+Si tiene alguna pregunta sobre esta política de privacidad o nuestras prácticas de datos, contáctenos en: bernardm@ucm.es`
       },
       {
         title: '2. Qué Datos Recopilamos',
@@ -120,10 +133,13 @@ Estos datos se recopilan cuando los envía voluntariamente a través de nuestro 
       {
         title: '4. Cómo Usamos Sus Datos',
         content: `Utilizamos sus datos personales para:
-• Responder a sus consultas sobre nuestro servicio de aprendizaje de inglés
-• Enviarle información sobre nuestro programa beta (si ha expresado interés)
-• Mejorar nuestro sitio web y servicios
-• Cumplir con obligaciones legales`
+• Contactarle en relación con su participación en este estudio de investigación
+• Realizar investigación académica para una tesis doctoral en la Universidad Complutense de Madrid
+• Publicar hallazgos anonimizados en revistas académicas y congresos
+• Mejorar la aplicación y los servicios utilizados en el estudio
+• Cumplir con obligaciones legales
+
+Sus datos nunca se utilizarán con fines comerciales. Todos los hallazgos publicados utilizan únicamente datos anonimizados.`
       },
       {
         title: '5. Compartición de Datos',
@@ -135,7 +151,7 @@ Todos los proveedores externos están vinculados por acuerdos de procesamiento d
       },
       {
         title: '6. Retención de Datos',
-        content: `Conservamos sus datos personales solo durante el tiempo necesario para cumplir los fines para los que fueron recopilados, normalmente no más de 2 años desde su última interacción con nosotros. Puede solicitar la eliminación en cualquier momento.`
+        content: `Conservamos sus datos personales durante un máximo de 5 años tras la conclusión del estudio de investigación, según las directrices de ética de la investigación de la UCM. Los datos se almacenan en servidores encriptados con acceso restringido al investigador principal y a la directora de tesis. Puede solicitar la eliminación en cualquier momento contactando con bernardm@ucm.es.`
       },
       {
         title: '7. Sus Derechos',

@@ -34,6 +34,8 @@ export interface Content {
     locationLabel: string;
     submitButton: string;
     successMessage: string;
+    consentLabel: string;
+    consentRequired: string;
   };
   nav: {
     languageSwitch: string;
@@ -44,7 +46,7 @@ export const content: Record<Lang, Content> = {
   en: {
     hero: {
       headline: 'Practice English Conversation Anytime, Without Pressure',
-      subheading: 'An AI-powered English conversation tutor designed for learners aged 55+, offering naturally adaptive dialogues wherever you are, whenever you\'re ready.',
+      subheading: 'An AI-powered English conversation tutor designed for learners aged 50+, offering naturally adaptive dialogues wherever you are, whenever you\'re ready.',
       cta: 'Request Your Invitation',
     },
     howItWorks: {
@@ -77,11 +79,11 @@ export const content: Record<Lang, Content> = {
     whoWeAreLookingFor: {
       title: 'Who We\'re Looking For',
       criteria: [
-        'Age 55 or older',
+        'Age 50 or older',
         'Learning English (any level welcome)',
-        'Own a smartphone (iPhone or Android)',
+        'Own a smartphone or computer with internet access',
         'Live in or near Madrid, Spain',
-        'Willing to try the app for 4 weeks',
+        'Available to use the app for 8 to 12 weeks',
       ],
     },
     whatYouWillGet: {
@@ -90,7 +92,7 @@ export const content: Record<Lang, Content> = {
         'Free access to the app',
         'Personal onboarding session',
         'Ongoing support throughout the study',
-        'Contribution to PhD research on senior language learning',
+        'Contribution to PhD research on senior language learning at Universidad Complutense de Madrid',
       ],
     },
     form: {
@@ -102,6 +104,8 @@ export const content: Record<Lang, Content> = {
       locationLabel: 'Location',
       submitButton: 'Request Invitation',
       successMessage: 'Thank you! We\'ll be in touch soon.',
+      consentLabel: 'I have read and understood the study information and I agree to be contacted about my participation in this research study conducted by Universidad Complutense de Madrid (Ethics approval ref. 663_CE_20260312_35_HUM). I understand I may withdraw at any time.',
+      consentRequired: 'You must accept the terms to submit.',
     },
     nav: {
       languageSwitch: 'Español',
@@ -110,7 +114,7 @@ export const content: Record<Lang, Content> = {
   es: {
     hero: {
       headline: 'Practica inglés cuando quieras, a tu ritmo y sin presión',
-      subheading: 'Un tutor de conversación en inglés con inteligencia artificial diseñado para mayores de 55 años. Diálogos naturales donde estés, cuando quieras.',
+      subheading: 'Un tutor de conversación en inglés con inteligencia artificial diseñado para mayores de 50 años. Diálogos naturales donde estés, cuando quieras.',
       cta: 'Solicita tu invitación',
     },
     howItWorks: {
@@ -143,10 +147,11 @@ export const content: Record<Lang, Content> = {
     whoWeAreLookingFor: {
       title: '¿A quién buscamos?',
       criteria: [
-        'Personas de 55 años o más',
+        'Personas de 50 años o más',
         'Con ganas de aprender inglés (cualquier nivel)',
-        'Con móvil u ordenador',
-        'Con disponibilidad para probar la aplicación durante 4 semanas',
+        'Con móvil u ordenador con acceso a internet',
+        'Residentes en Madrid o alrededores',
+        'Con disponibilidad para usar la aplicación durante 8 a 12 semanas',
       ],
     },
     whatYouWillGet: {
@@ -155,7 +160,7 @@ export const content: Record<Lang, Content> = {
         'Acceso gratuito a la aplicación',
         'Sesión de bienvenida y formación inicial',
         'Apoyo continuo durante todo el estudio',
-        'Participación en una investigación de doctorado sobre el aprendizaje de idiomas en adultos',
+        'Participación en una investigación de doctorado sobre el aprendizaje de idiomas en adultos mayores en la Universidad Complutense de Madrid',
       ],
     },
     form: {
@@ -167,6 +172,8 @@ export const content: Record<Lang, Content> = {
       locationLabel: 'Ciudad',
       submitButton: 'Solicitar invitación',
       successMessage: '¡Gracias! Nos pondremos en contacto contigo pronto.',
+      consentLabel: 'He leído y entendido la información del estudio y acepto ser contactado/a para participar en esta investigación realizada por la Universidad Complutense de Madrid (ref. aprobación ética: 663_CE_20260312_35_HUM). Entiendo que puedo retirarme en cualquier momento.',
+      consentRequired: 'Debes aceptar los términos para enviar el formulario.',
     },
     nav: {
       languageSwitch: 'English',

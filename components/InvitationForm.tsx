@@ -2,19 +2,27 @@
 
 import { Content, Lang } from '@/lib/content';
 import { useState, FormEvent } from 'react';
+import Link from 'next/link';
 
 interface InvitationFormProps {
   content: Content['form'];
   lang: Lang;
 }
 
-export default function InvitationForm({ content }: InvitationFormProps) {
+export default function InvitationForm({ content, lang }: InvitationFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [error, setError] = useState('');
+  const [consentChecked, setConsentChecked] = useState(false);
+  const [consentError, setConsentError] = useState(false);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!consentChecked) {
+      setConsentError(true);
+      return;
+    }
+    setConsentError(false);
     setIsSubmitting(true);
     setError('');
 
@@ -171,7 +179,33 @@ export default function InvitationForm({ content }: InvitationFormProps) {
               </div>
             </div>
 
-            <div className="mt-8">
+            <div className="mt-6">
+              <label className="flex items-start gap-3 cursor-pointer group">
+                <input
+                  type="checkbox"
+                  checked={consentChecked}
+                  onChange={(e) => {
+                    setConsentChecked(e.target.checked);
+                    if (e.target.checked) setConsentError(false);
+                  }}
+                  className="mt-1 w-5 h-5 rounded border-gray-300 text-emerald-600 focus:ring-emerald-500 flex-shrink-0"
+                  aria-required="true"
+                />
+                <span className="text-sm text-gray-600 leading-relaxed">
+                  {content.consentLabel}{' '}
+                  <Link href={`/${lang}/privacy`} className="text-emerald-600 hover:underline">
+                    {lang === 'es' ? 'Política de Privacidad' : 'Privacy Policy'}
+                  </Link>
+                </span>
+              </label>
+              {consentError && (
+                <p className="mt-2 text-sm text-red-600" role="alert">
+                  {content.consentRequired}
+                </p>
+              )}
+            </div>
+
+            <div className="mt-6">
               <button
                 type="submit"
                 disabled={isSubmitting}
